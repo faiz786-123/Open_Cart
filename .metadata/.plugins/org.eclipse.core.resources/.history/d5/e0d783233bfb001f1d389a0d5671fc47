@@ -1,0 +1,20 @@
+package Test1;
+
+public class Swapping_Numbers {
+
+	public static void main(String[] args) {
+		
+		int a = 20;
+		int b = 50;
+		
+		System.out.println("Before swaping values are:" +a  + b);
+		
+		int t = a;
+		a=b;
+		b=t;
+		
+		System.out.println("After swappping values are: " + a + b);
+
+	}
+
+}

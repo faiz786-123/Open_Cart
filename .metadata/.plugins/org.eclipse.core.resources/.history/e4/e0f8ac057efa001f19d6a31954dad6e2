@@ -1,0 +1,14 @@
+package Test1;
+
+public class Occurence {
+
+	public static void main(String[] args) {
+		
+		String input = "My name is faiz";
+		for(int i = 0; i<input.; i>=0; i++)
+		input.charAt(i)
+		
+
+	}
+
+}

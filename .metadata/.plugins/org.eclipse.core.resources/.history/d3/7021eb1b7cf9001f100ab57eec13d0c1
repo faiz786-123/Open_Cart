@@ -1,0 +1,22 @@
+package day22;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UploadFile {
+
+	public static void main(String[] args) {
+
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.foundit.in/seeker/profile");
+		driver.manage().window().maximize();
+		driver.findElement(By.id("id=\"inline-resume\"")).sendKeys("‪C:\\Users\\LENOVO.IN\\Desktop\\Faiz_Automation_Testing Resume.pd");
+
+	}
+
+}

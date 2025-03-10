@@ -1,0 +1,16 @@
+package Test1;
+
+public class CharactorOccurance {
+
+	public static void main(String[] args) {
+		
+		String input = "Java programing learn";
+		
+		input.length();
+		input.replace("a", "").length();
+		int count = input.length()-input.replace("r", "").length();
+		System.out.println(count);
+
+	}
+
+}
