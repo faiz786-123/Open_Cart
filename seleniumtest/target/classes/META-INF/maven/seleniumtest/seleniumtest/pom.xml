@@ -3,6 +3,31 @@
   <groupId>seleniumtest</groupId>
   <artifactId>seleniumtest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.14.0</version>
+          </plugin>
+          
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.2</version>
+          
+          <configuration>
+            <suiteXmlFiles>
+            <suiteXmlFil>testing.xml</suiteXmlFil>
+            </suiteXmlFiles>
+          </configuration>
+          
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
   <dependencies>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
